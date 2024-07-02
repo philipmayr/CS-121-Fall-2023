@@ -1,0 +1,12 @@
+
+Name:        Philip May'r
+Class:       CSC121-001
+
+Activity:    Ounce Conversion Program
+
+Option:      Add (Level 1) to allow the user to type the oz after their weight value. 
+             
+Level:       3 (2 base + 1 option)
+
+Description: Converts ounces to pounds.
+

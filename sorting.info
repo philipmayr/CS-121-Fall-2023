@@ -1,0 +1,19 @@
+
+Name:        Philip May'r
+Class:       CSC121-001
+
+Activity:    Sorting Algorithm Comparison Program
+
+Options:     Add (Level 0.5) to allow the user to specify the bounds of the range
+             for the random values you are filling the vector with.
+             Add (Level 0.5) to allow the user the option of filling the vector 
+             randomly or entering the data by hand.
+             Add (Level 1.5) to use the time function to measure the time the 
+             sorting algorithms take to run.
+             Add (Level 1.5) to do the bubble sort as well.
+             
+Level:       2 (2 base +  options)
+
+Description: Compares the run time of selection, insertion, and bubble
+             sorting algorithms.
+

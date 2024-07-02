@@ -1,0 +1,23 @@
+Thought Provoking Questions - Lab 2 - Ounce Conversion Program
+
+1.) The constant value in this program is the pound-to-ounce conversion factor, 16.
+    This constant is of an integer data type. It stands for the number of ounces in one pound and it was named OZ_IN_LB.
+
+2.) There are three integer variables in the program.
+
+3.) We can get both the decimal total pounds as well as the whole pounds along with the remaining ounces from the same input value 
+    by simply casting our input value into a floating point data type upon calculating.
+
+4.) When a user enters a fractional number of ounces to begin with, only the whole number reads in, and the fractional part is thrown away.
+
+5.) If a user unwittingly types a symbol or a letter at the beginning of input, the input read fails to record a value. 
+    However, if a symbol or a letter is typed in at the end after a valid integer input, the integer value reads in properly and the following characters are cast off.
+
+User-Entered-Units
+
+1.) We can ignore unwanted user input calling the cin.ignore() function along with appropriate arguments.
+
+2.) This facility may require including <limits> if we wish to ignore the maximum number of characters.
+
+3.) We don't use the string data type in this situation because cin doesn't lend itself well to string input that contains whitespace characters,
+    as it stops reading in further input upon encountering a whitespace character.

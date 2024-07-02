@@ -1,0 +1,22 @@
+
+Thought-Provoking Questions - Lab 7 - Meeting
+
+1.) 
+
+Room capacity and meeting attendance are integer data types.
+A percentage is stored in a floating point type.
+
+2.) 
+
+Three branches are required. One branch for when occupancy is less than capacity, 
+one for when occupancy is equal to capacity, 
+and one for when occupancy is greater than capacity.
+
+3.) 
+
+Three tests are required, one for each branch.
+
+4.) 
+
+The rounding formula is floor(value + 0.5).
+

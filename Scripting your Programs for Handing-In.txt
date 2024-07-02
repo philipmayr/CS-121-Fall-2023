@@ -1,0 +1,9 @@
+script
+pwd
+cat progname.info
+show-code progname.cpp
+CPP progname
+./progname.out
+cat progname.tpq
+exit
+script-print Last-First-progname

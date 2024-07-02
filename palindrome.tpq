@@ -1,0 +1,33 @@
+
+Thought-Provoking Questions - Lab 7 - Palindrome
+
+1.)
+An individual character within a string may be accessed using the subscript
+operator []. For instance, in a string named 'class' having a value of
+"Computer Science 121", class[0] returns 'C', and class[2] returns 'm'.
+
+2.)
+The size or length of a string type may be gotten by calling 
+the string object's .size() or .length() member function. 
+Both functions return the same values.
+
+3.)
+We can tell whether the first and last characters of a string are the same
+or not by comparing them with the equality operator ==.
+
+4.)
+For strings with an odd number of characters, the middle character need
+not be looked at, as a palindrome must be symmetrical about
+the middle character. Only the characters before and after the middle
+character are compared one to another.
+
+5.)
+For a string with a length of an even number of characters, each character 
+must be considered. For a string with a length of an odd number 
+of characters, the central character may be left out of consideration. 
+
+6.) 
+The program does consider '34743' a palindrome. The algorithm implemented
+works for any string of characters, regardless of whether they be digits,
+symbols, or letters.
+

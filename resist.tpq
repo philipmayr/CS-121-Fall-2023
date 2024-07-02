@@ -1,0 +1,119 @@
+
+Thought Provoking Questions - Lab 1 - 
+Series and Parallel Resistance Calculator
+
+1.) 
+
+Only one cin input statement is strictly necessary. 
+However, two are necessary in order for the adjusted formula option.
+
+2.) 
+
+The order in which the user inputs the two resistor values matters not. 
+The commutative property of addition states that 
+the order of addends can be changed without changing their sum.
+
+3.) 
+
+The "welcome" message and the "enter" prompt should be printed 
+from separate cout statements given that their purposes differ. 
+The first statement is declarative; the second, interrogative.
+
+4.) 
+
+Nothing adverse would happen should the user enter values
+on separate lines. 
+cin considers spaces, tabs, and newlines all whitespace characters.
+
+5.) 
+
+In C++ code, parentheses () are used for grouping terms.
+
+6.) 
+
+i. Four variables seem reasonable for this program.
+ii. A bare minimum would likely be two variables if
+    the formula results were not stored in separate variables and 
+    the calculation were processed in the output statement. 
+iii. At most, four variables could be used. 
+     More than four variables would likely be unnecessary.
+iv. After adding options, the program now includes additional variables 
+    necessary for processing further user inputs.
+
+7.) 
+
+Zero and negative values are disallowed for Rsub1 and Rsub2, 
+as a resistance must be of a positive value. 
+From a mathematical perspective, zero values for Rsub1 and Rsub2
+for parallel resistors are restricted as division by zero is undefined.
+
+8.) 
+
+Given negative inputs, both series and parallel outputs successfully 
+calculate according to the formula. 
+Given an input of '0' for either the first or second values, 
+the series output will calculate successfully; however, 
+the parallel output will return a '0'.
+
+Options - 
+
+User-Entered-Units
+
+1.) 
+
+Unwanted input can be dismissed by calling cin.ignore() 
+along with the appropriate arguments.
+
+2.) 
+
+This facility optionally requires including <limits> in order to 
+get the maximum value of the stream size
+using numeric_limits<streamsize>::max().
+
+3.) 
+
+We don't use the string data type in this instance because cin will stop
+reading into strings upon encountering a whitespace character. 
+Furthermore, using strings, desired integer values would need to be parsed
+out of the entire inputted string of characters.
+
+Algebraic Exploration
+
+1.) 
+
+Floating point exceptions often occur when attempting to divide by zero.
+    i. In both cases, the coder most likely neglected to cast
+       the integer input values into floating point data types
+       upon calculation.
+       In the first case, dividing one by the input integer values results
+       in zero, which the program then attempts to divide one by, causing a 
+       divide-by-zero exception. 
+    ii. In the second case, since there was no division by zero,
+        the program runs successfully; however, the resulting value is
+        truncated since integer data types do not hold decimal values. 
+
+2.) 
+
+Yes, the algebraic rearrangement formula adjustment was worth
+the cost of time and effort. 
+
+Accumulator Loop
+
+1.) 
+
+We can tell that the user is done adding new resistors by simply prompting
+the user to enter yes/no before displaying the additional resistor value
+input prompts. 
+With a user input of 'no', or any variation thereof, we can be sure that
+the user is done adding on resistors and move on to calculating and displaying
+results.
+
+2.) 
+
+We can adjust for the fact that the accumulator pattern doesn't work
+as easily for reciprocal sums as it does for sums or products
+by simply adding new values onto the total sum of denominator reciprocals.
+Finally, when we are done adding on new resistor values, 
+we can find the total parallel resistance by dividing one (1)
+by the previously summed-up denominator values.
+

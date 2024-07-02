@@ -1,0 +1,17 @@
+
+Name:        Philip May'r	
+Class:       CSC121-001
+
+Activity:    Floor Determining Program
+
+Options:     Add (Level 1) credit for placing your suffix-determining function
+             in a library.
+             Add another (Level 0.5) to re-use the suffix library you created 
+             in the analogous lab.
+	     Add (Level 1.5) credit for allowing the user to type 
+             the word 'yes' or the word 'no.' 
+
+Level:       7 (4 + 1 + 0.5 + 1.5) 
+
+Description: Tells the user which floor the room they are seeking is on.
+

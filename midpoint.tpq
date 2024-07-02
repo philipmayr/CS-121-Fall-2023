@@ -1,0 +1,43 @@
+Thought Provoking Questions - Lab 3 - Midpoint Calculator
+
+1.) Six variables are needed. Two values (x and y coordinates) are needed to mark a 2D point; thus, the three points (first endpoint, second endpoint, and midpoint) are made up of six coordinate values. 
+
+2.) A midpoint's coordinates can be fractional, even though the endpoint coordinates may not, because of the division by two in the formula. 
+
+3.) The midpoint formula is (xsubm, ysubm) = ((xsub1 + xsub2) / 2, (ysub1 + ysub2) / 2). The formula to find a midpoint coordinate is the same for x and y: (coordinate point) = ((coordinate point + coordinate point) / 2).
+
+4.) Point location doesn't seem to be a direct factor in program robustness. 
+
+5.) We can plot a pair of points from the Cartesian plane in 16 different ways (4 * 4).
+
+    x in quadrant 1 : y in quadrant 1
+    x in quadrant 1 : y in quadrant 2
+    x in quadrant 1 : y in quadrant 3
+    x in quadrant 1 : y in quadrant 4
+
+    x in quadrant 2 : y in quadrant 1
+    x in quadrant 2 : y in quadrant 2
+    x in quadrant 2 : y in quadrant 3
+    x in quadrant 2 : y in quadrant 4
+
+    x in quadrant 3 : y in quadrant 1
+    x in quadrant 3 : y in quadrant 2
+    x in quadrant 3 : y in quadrant 3
+    x in quadrant 3 : y in quadrant 4
+
+    x in quadrant 4 : y in quadrant 1
+    x in quadrant 4 : y in quadrant 2
+    x in quadrant 4 : y in quadrant 3
+    x in quadrant 4 : y in quadrant 1
+
+More TPQ
+
+1.) A char variable will be required for cin to read symbols into.
+
+2.) Only one extra char variable will be required, as the value does not need to be stored and therefore can be overridden.
+
+3.) Symbols can be placed next to numbers by simply reading the input symbol into a char variable instead of an int data type.
+
+4.) The user can type in any other symbol, including letter characters, without issue. Digits, however, will be passed over.
+
+5.) When a character or symbol is read into an int-type variable, the program exhibits faulty behavior.

@@ -1,0 +1,399 @@
+Script started on 2023-12-15 10:59:00-06:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="237" LINES="70"]
+mf98604@ares:~$ pwd
+/home/students/mf98604
+mf98604@ares:~$ ca[K[Kdi[K[Kshow0c[K[K-cd[Kode distance [K.cpp
+
+
+distance.cpp:
+
+
+     1	[36m#[39;49;00m[36minclude[39;49;00m [37m<iostream>[39;49;00m[36m[39;49;00m
+     2	[36m#[39;49;00m[36minclude[39;49;00m [37m<cmath>[39;49;00m[36m[39;49;00m
+     3	
+     4	[34musing[39;49;00m [34mnamespace[39;49;00m std;
+     5	
+     6	[36mdouble[39;49;00m [32mget_distance[39;49;00m([36mdouble[39;49;00m first_x, [36mdouble[39;49;00m first_y, [36mdouble[39;49;00m second_x, [36mdouble[39;49;00m second_y) {
+     7	    [34mreturn[39;49;00m sqrt(pow(second_x - first_x, [34m2[39;49;00m) + 
+     8		        pow(second_y - first_y, [34m2[39;49;00m) * [34m1.0[39;49;00m);
+     9	}
+    10	
+    11	[36mint[39;49;00m [32mmain[39;49;00m() {
+    12	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\t[39;49;00m[33m\t[39;49;00m[33mWelcome to the 2D Distance Program!!![39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    13	
+    14	    [36mdouble[39;49;00m first_x,
+    15	           first_y,
+    16	           second_x,
+    17	           second_y,
+    18	           distance;
+    19	
+    20	    [36mchar[39;49;00m symbol;
+    21	
+    22	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mEnter first point x and y coordinates (x, y): [39;49;00m[33m"[39;49;00m;
+    23	    cin >> symbol >> first_x >> symbol >> first_y >> symbol;
+    24	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mEnter second point x and y coordinates (x, y): [39;49;00m[33m"[39;49;00m;
+    25	    cin >> symbol >> second_x >> symbol >> second_y >> symbol;
+    26	
+    27	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mThank you!!  Calculating...  [39;49;00m[33m"[39;49;00m;
+    28	    distance = get_distance(first_x, first_y, second_x, second_y);
+    29	    cout << [33m"[39;49;00m[33mDone.[39;49;00m[33m"[39;49;00m << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m([39;49;00m[33m"[39;49;00m << first_x << [33m"[39;49;00m[33m, [39;49;00m[33m"[39;49;00m << first_y << [33m"[39;49;00m[33m) is [39;49;00m[33m"[39;49;00m <<
+    30	    distance << [33m"[39;49;00m[33m units away from ([39;49;00m[33m"[39;49;00m << second_x << [33m"[39;49;00m[33m, [39;49;00m[33m"[39;49;00m << second_y << [33m"[39;49;00m[33m).[39;49;00m[33m"[39;49;00m;
+    31	
+    32	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mThank you for using the TDP!![39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    33	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mHave a wonderful day![39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    34	    [34mreturn[39;49;00m [34m0[39;49;00m;
+    35	}
+mf98604@ares:~$ show-code distance.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-code midpoint.cpp
+
+
+midpoint.cpp:
+
+
+     1	[36m#[39;49;00m[36minclude[39;49;00m [37m<iostream>[39;49;00m[36m[39;49;00m
+     2	
+     3	[34musing[39;49;00m [34mnamespace[39;49;00m std;
+     4	
+     5	[36mint[39;49;00m [32mmain[39;49;00m()
+     6	{
+     7	    [36mchar[39;49;00m symbol;
+     8	
+     9	    [36mdouble[39;49;00m x1,
+    10	           y1,
+    11	           x2,
+    12	           y2;
+    13	
+    14	    [36mdouble[39;49;00m midpoint_x,
+    15	           midpoint_y;
+    16	
+    17	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\t[39;49;00m[33m\t[39;49;00m[33mWelcome to the 2D Midpoint Program![39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    18	
+    19	    cout << [33m"[39;49;00m[33mWhat is the first endpoint? [39;49;00m[33m"[39;49;00m;
+    20	
+    21	    cin >> symbol >> x1 >> symbol >> y1 >> symbol;
+    22	
+    23	    cout << [33m"[39;49;00m[33mWhat is the second endpoint? [39;49;00m[33m"[39;49;00m;
+    24	
+    25	    cin >> symbol >> x2 >> symbol >> y2 >> symbol;
+    26	
+    27	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mCalculating... [39;49;00m[33m"[39;49;00m;
+    28	
+    29	    midpoint_x = ((x1 + x2) / [34m2[39;49;00m);
+    30	    midpoint_y = ((y1 + y2) / [34m2[39;49;00m);
+    31	
+    32	    cout << [33m"[39;49;00m[33mDone.[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    33	
+    34	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mThe midpoint of the line segment between points [39;49;00m[33m"[39;49;00m
+    35		    [33m"[39;49;00m[33m([39;49;00m[33m"[39;49;00m << x1 << [33m"[39;49;00m[33m, [39;49;00m[33m"[39;49;00m << y1 << [33m"[39;49;00m[33m) and ([39;49;00m[33m"[39;49;00m << x2 << [33m"[39;49;00m[33m, [39;49;00m[33m"[39;49;00m << y2 << [33m"[39;49;00m[33m)[39;49;00m[33m"[39;49;00m
+    36		    [33m"[39;49;00m[33m is ([39;49;00m[33m"[39;49;00m << midpoint_x << [33m"[39;49;00m[33m, [39;49;00m[33m"[39;49;00m << midpoint_y << [33m"[39;49;00m[33m).[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    37	
+    38	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mThank you for using the 2D Midpoint Program![39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    39	
+    40	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mHave a bright day![39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    41	
+    42	    [34mreturn[39;49;00m [34m0[39;49;00m;
+    43	}
+mf98604@ares:~$ show-code times.cpp[K[K[K[K[K[K[K[K[Kounces.cpp
+
+
+ounces.cpp:
+
+
+     1	[36m#[39;49;00m[36minclude[39;49;00m [37m<iostream>[39;49;00m[36m[39;49;00m
+     2	[36m#[39;49;00m[36minclude[39;49;00m [37m<limits>[39;49;00m[36m[39;49;00m
+     3	
+     4	[34musing[39;49;00m [34mnamespace[39;49;00m std;
+     5	
+     6	[34mconstexpr[39;49;00m streamsize INF_FLAG{numeric_limits<streamsize>::max()};
+     7	
+     8	[36mint[39;49;00m [32mmain[39;49;00m()
+     9	{
+    10	    [34mconst[39;49;00m [36mshort[39;49;00m OZ_IN_LB = [34m16[39;49;00m;
+    11	
+    12	    [36mshort[39;49;00m ounces, pounds, ounces_remaining;
+    13	
+    14	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\t[39;49;00m[33m\t[39;49;00m[33mWelcome to the Ounce-to-Pound Conversion Program!!![39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    15	    cout << [33m"[39;49;00m[33mEnter number of ounces: [39;49;00m[33m"[39;49;00m;
+    16	
+    17	    cin >> ounces;
+    18	    cin.ignore(INF_FLAG, [33m'[39;49;00m[33m\n[39;49;00m[33m'[39;49;00m);
+    19	
+    20	    pounds = ounces / OZ_IN_LB;
+    21	    ounces_remaining = ounces % OZ_IN_LB;
+    22	
+    23	    cout << [33m'[39;49;00m[33m\n[39;49;00m[33m'[39;49;00m << ounces << [33m"[39;49;00m[33m oz. is equal to [39;49;00m[33m"[39;49;00m << pounds << [33m"[39;49;00m[33m lb(s) and [39;49;00m[33m"[39;49;00m 
+    24	         << ounces_remaining << [33m"[39;49;00m[33m oz. ([39;49;00m[33m"[39;49;00m 
+    25	         << [34mstatic_cast[39;49;00m<[36mdouble[39;49;00m>(ounces) / OZ_IN_LB << [33m"[39;49;00m[33m lbs.).[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    26	
+    27	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mThank you for using the OTP Conversion Program!![39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+    28	            [33m"[39;49;00m[33m\n[39;49;00m[33mHave a wonderful day![39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    29	
+    30	    [34mreturn[39;49;00m [34m0[39;49;00m;
+    31	}
+mf98604@ares:~$ show-code time.cpp
+
+
+time.cpp:
+
+
+     1	[36m#[39;49;00m[36minclude[39;49;00m [37m<iostream>[39;49;00m[36m[39;49;00m
+     2	[36m#[39;49;00m[36minclude[39;49;00m [37m<string>[39;49;00m[36m[39;49;00m
+     3	[36m#[39;49;00m[36minclude[39;49;00m [37m<ctime>[39;49;00m[36m[39;49;00m
+     4	
+     5	[34musing[39;49;00m [34mnamespace[39;49;00m std;
+     6	
+     7	[36mbool[39;49;00m [32mis_leap[39;49;00m([36mshort[39;49;00m year);
+     8	
+     9	[36mint[39;49;00m [32mmain[39;49;00m() {
+    10	    [34mconst[39;49;00m [36mshort[39;49;00m seconds_per_minute = [34m60[39;49;00m,
+    11	            minutes_per_hour = [34m60[39;49;00m,
+    12	            seconds_per_hour = seconds_per_minute * minutes_per_hour,
+    13	            hours_per_day = [34m24[39;49;00m,
+    14	            CDT_offset = -[34m5[39;49;00m;
+    15	
+    16	    [34mconst[39;49;00m [36mlong[39;49;00m seconds_per_day =
+    17	            [34mstatic_cast[39;49;00m<[36mlong[39;49;00m>(seconds_per_hour) * hours_per_day;
+    18	
+    19	    [36mlong[39;49;00m seconds_today = time([34mnullptr[39;49;00m) % seconds_per_day;
+    20	
+    21	    [36mshort[39;49;00m current_hour = seconds_today / seconds_per_hour,
+    22	            current_minute =
+    23	            seconds_today % seconds_per_hour / seconds_per_minute,
+    24	            current_second =
+    25	            seconds_today % seconds_per_hour % seconds_per_minute;
+    26	
+    27	    current_hour += CDT_offset;
+    28	
+    29	    [36mshort[39;49;00m twelve_hr_clock_hour = current_hour % [34m12[39;49;00m;
+    30	
+    31	    string am_pm = [33m"[39;49;00m[33mAM[39;49;00m[33m"[39;49;00m;
+    32	
+    33	    [34mif[39;49;00m (current_hour >= [34m12[39;49;00m) {
+    34	        am_pm = [33m"[39;49;00m[33mPM[39;49;00m[33m"[39;49;00m;
+    35	    }
+    36	
+    37	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33mThe current time is [39;49;00m[33m"[39;49;00m << current_hour << [33m'[39;49;00m[33m:[39;49;00m[33m'[39;49;00m;
+    38	    cout.fill([33m'[39;49;00m[33m0[39;49;00m[33m'[39;49;00m);
+    39	    cout.width([34m2[39;49;00m);
+    40	    cout << current_minute << [33m"[39;49;00m[33m:[39;49;00m[33m"[39;49;00m;
+    41	    cout.width([34m2[39;49;00m);
+    42	    cout << current_second << [33m"[39;49;00m[33m ([39;49;00m[33m"[39;49;00m;
+    43	    cout << twelve_hr_clock_hour << [33m"[39;49;00m[33m:[39;49;00m[33m"[39;49;00m;
+    44	    cout.width([34m2[39;49;00m);
+    45	    cout << current_minute << [33m"[39;49;00m[33m:[39;49;00m[33m"[39;49;00m;
+    46	    cout.width([34m2[39;49;00m);
+    47	    cout << current_second << [33m"[39;49;00m[33m [39;49;00m[33m"[39;49;00m <<
+    48	         am_pm << [33m"[39;49;00m[33m).[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+    49	}
+mf98604@ares:~$ show-c[Kcode complex.cpp
+
+
+complex.cpp:
+
+
+     1	[36m#[39;49;00m[36minclude[39;49;00m [37m<iostream>[39;49;00m[36m[39;49;00m
+     2	[36m#[39;49;00m[36minclude[39;49;00m [37m<cmath>[39;49;00m[36m[39;49;00m
+     3	
+     4	[34musing[39;49;00m [34mnamespace[39;49;00m std;
+     5	
+     6	[34mclass[39;49;00m [04m[32mComplexNum[39;49;00m
+     7	{
+     8	    [34mprivate[39;49;00m:
+     9	        [36mdouble[39;49;00m real,
+    10	               imag;
+    11	        [36mchar[39;49;00m symbol;
+    12	
+    13	    [34mpublic[39;49;00m:
+    14	        [36mvoid[39;49;00m Input();
+    15	        [36mvoid[39;49;00m [32mOutput[39;49;00m();
+    16	        [36mvoid[39;49;00m [32mAssign[39;49;00m([36mdouble[39;49;00m real, [36mdouble[39;49;00m imag, [36mchar[39;49;00m symbol = [33m'[39;49;00m[33mi[39;49;00m[33m'[39;49;00m);
+    17	        [36mvoid[39;49;00m [32mAssign[39;49;00m(ComplexNum x);
+    18	        ComplexNum [32mAdd[39;49;00m(ComplexNum x);
+    19	        ComplexNum [32mSubtract[39;49;00m(ComplexNum x);
+    20	        ComplexNum [32mMultiply[39;49;00m(ComplexNum x);
+    21	        ComplexNum [32mDivide[39;49;00m(ComplexNum x);
+    22	        [36mbool[39;49;00m [32mIsEqual[39;49;00m(ComplexNum x);
+    23	        [36mdouble[39;49;00m [32mMagnitude[39;49;00m();
+    24	        ComplexNum [32mConjugate[39;49;00m();
+    25	};
+    26	
+    27	[36mvoid[39;49;00m ComplexNum::Input()
+    28	{
+    29	    [36mchar[39;49;00m plus_minus;
+    30	    cin >> real
+    31	        >> plus_minus
+    32	        >> imag
+    33	        >> symbol;
+    34	    [34mif[39;49;00m (plus_minus == [33m'[39;49;00m[33m-[39;49;00m[33m'[39;49;00m)
+    35	    {
+    36	        imag = -imag;
+    37	    }
+    38	    [34mreturn[39;49;00m;
+    39	}
+    40	
+    41	[36mvoid[39;49;00m ComplexNum::Output()
+    42	{
+    43	    cout << real;
+    44	    [34mif[39;49;00m (fabs(imag) > [34m0[39;49;00m)
+    45	    {
+    46	        cout << ((imag > -[34m1[39;49;00m) ? ([33m'[39;49;00m[33m+[39;49;00m[33m'[39;49;00m) : ([33m'[39;49;00m[33m-[39;49;00m[33m'[39;49;00m))
+    47	             << fabs(imag)
+    48	             << symbol;
+    49	    }
+    50	    [34mreturn[39;49;00m;
+    51	}
+    52	
+    53	[36mvoid[39;49;00m ComplexNum::Assign([36mdouble[39;49;00m a, [36mdouble[39;49;00m b, [36mchar[39;49;00m i)
+    54	{
+    55	    real = a;
+    56	    imag = b;
+    57	    symbol = i;
+    58	    [34mreturn[39;49;00m;
+    59	}
+    60	
+    61	[36mvoid[39;49;00m ComplexNum::Assign(ComplexNum y)
+    62	{
+    63	    real = y.real;
+    64	    imag = y.imag;
+    65	    symbol = y.symbol;
+    66	    [34mreturn[39;49;00m;
+    67	}
+    68	
+    69	[36mbool[39;49;00m ComplexNum::IsEqual(ComplexNum y)
+    70	{
+    71	    [34mreturn[39;49;00m ((real == y.real) && 
+    72	            (imag == y.imag) && 
+    73	            (symbol == y.symbol));
+    74	}
+    75	
+    76	ComplexNum ComplexNum::Add(ComplexNum y)
+    77	{
+    78	    ComplexNum z;
+    79	    z.real = real + y.real;
+    80	    z.imag = imag + y.imag;
+    81	    z.symbol = y.symbol;
+    82	    [34mreturn[39;49;00m z;
+    83	}
+    84	
+    85	ComplexNum ComplexNum::Subtract(ComplexNum y)
+    86	{
+    87	    ComplexNum z;
+    88	    z.real = real - y.real;
+    89	    z.imag = imag - y.imag;
+    90	    z.symbol = y.symbol;
+    91	    [34mreturn[39;49;00m z;
+    92	}
+    93	
+    94	ComplexNum ComplexNum::Multiply(ComplexNum y)
+    95	{
+    96	    ComplexNum z;
+    97	    z.real = (real * y.real) + (imag * y.imag);
+    98	    z.imag = imag * y.imag;
+    99	    z.symbol = y.symbol;
+   100	    [34mreturn[39;49;00m z;
+   101	}
+   102	
+   103	ComplexNum ComplexNum::Divide(ComplexNum y)
+   104	{
+   105	    ComplexNum z;
+   106	    z.real = (real * y.real + imag * y.imag) / 
+   107	           (y.real * y.real + y.imag * y.imag);
+   108	    z.imag = -(real * y.real - imag * y.imag) / 
+   109	            (y.real * y.real + y.imag * y.imag);
+   110	    z.symbol = y.symbol; 
+   111	    [34mreturn[39;49;00m z;
+   112	}
+   113	
+   114	[36mdouble[39;49;00m ComplexNum::Magnitude()
+   115	{
+   116	    [34mreturn[39;49;00m sqrt(real * real + imag * imag);
+   117	}
+   118	
+   119	ComplexNum ComplexNum::Conjugate()
+   120	{
+   121	    ComplexNum z;
+   122	    z.real = real;
+   123	    z.imag = -imag;
+   124	    z.symbol = symbol;
+   125	    [34mreturn[39;49;00m z;
+   126	}
+   127	
+   128	[36mint[39;49;00m main()
+   129	{
+   130	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mPlease enter [39;49;00m[33m\'[39;49;00m[33mx[39;49;00m[33m\'[39;49;00m[33m, a complex number of the form a + bi, [39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   131	            [33m"[39;49;00m[33mwhere a and b are real numbers and i is the square root of -1:[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   132	    ComplexNum complex_num_x;
+   133	    complex_num_x.Input();
+   134	
+   135	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mYou entered: [39;49;00m[33m\'[39;49;00m[33m"[39;49;00m;
+   136	    complex_num_x.Output();
+   137	    cout << [33m"[39;49;00m[33m\'[39;49;00m[33m"[39;49;00m;
+   138	
+   139	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mPlease enter [39;49;00m[33m\'[39;49;00m[33my[39;49;00m[33m\'[39;49;00m[33m, a complex number of the form a + bi, [39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   140	            [33m"[39;49;00m[33mwhere a and b are real numbers and i is the square root of -1:[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   141	    ComplexNum complex_num_y;
+   142	    complex_num_y.Input();
+   143	
+   144	    ComplexNum complex_num_z;
+   145	
+   146	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mYou entered: [39;49;00m[33m\'[39;49;00m[33m"[39;49;00m;
+   147	    complex_num_y.Output();
+   148	
+   149	    [36mchar[39;49;00m choice;
+   150	
+   151	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33mEnter 'a' to add x and y,[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   152	            [33m"[39;49;00m[33m'b' to subtract x from y,[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   153	            [33m"[39;49;00m[33m'm' to multiply x by y,[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   154	            [33m"[39;49;00m[33m'd' to divide x by y,[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   155	            [33m"[39;49;00m[33m'mag' to get the magnitudes of x and y,[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m
+   156	            [33m"[39;49;00m[33mor 'conj' to get the conjugates of x and y:[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   157	
+   158	    cin >> choice;
+   159	
+   160	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   161	
+   162	    [34mswitch[39;49;00m(choice)
+   163	    {
+   164	        [34mcase[39;49;00m [33m'[39;49;00m[33ma[39;49;00m[33m'[39;49;00m:
+   165	            complex_num_z = complex_num_x.Add(complex_num_y);
+   166	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   167	            complex_num_z.Output();
+   168	            [34mbreak[39;49;00m;
+   169	        [34mcase[39;49;00m [33m'[39;49;00m[33mb[39;49;00m[33m'[39;49;00m:
+   170	            complex_num_z = complex_num_x.Subtract(complex_num_y);
+   171	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   172	            complex_num_z.Output();
+   173	            [34mbreak[39;49;00m;
+   174	        [34mcase[39;49;00m [33m'[39;49;00m[33mm[39;49;00m[33m'[39;49;00m:
+   175	            complex_num_z = complex_num_x.Multiply(complex_num_y);
+   176	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   177	            complex_num_z.Output();
+   178	            [34mbreak[39;49;00m;
+   179	        [34mcase[39;49;00m [33m'[39;49;00m[33md[39;49;00m[33m'[39;49;00m:
+   180	            complex_num_z = complex_num_x.Divide(complex_num_y);
+   181	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   182	            complex_num_z.Output();
+   183	            [34mbreak[39;49;00m;
+   184	        [34mcase[39;49;00m [33m'[39;49;00m[33mg[39;49;00m[33m'[39;49;00m:
+   185	            cout << complex_num_x.Magnitude();
+   186	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   187	            cout << complex_num_y.Magnitude();
+   188	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   189	            [34mbreak[39;49;00m;
+   190	        [34mcase[39;49;00m [33m'[39;49;00m[33mj[39;49;00m[33m'[39;49;00m:
+   191	            complex_num_z = complex_num_x.Conjugate();
+   192	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   193	            complex_num_z.Output();
+   194	            complex_num_z = complex_num_y.Conjugate();
+   195	            cout << [33m"[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   196	            complex_num_z.Output();
+   197	            [34mbreak[39;49;00m;
+   198	    }
+   199	
+   200	    cout << [33m"[39;49;00m[33m\n[39;49;00m[33m\n[39;49;00m[33m"[39;49;00m;
+   201	}
+mf98604@ares:~$ script-print MAy[K[Kay-[Kr-Philip-EC[K[K121[K[K[K121-EC[K[K[K[K[K[KCSC121-EC
+"typescript" printed to "Mayr-Philip-CSC121-EC.pdf".
+mf98604@ares:~$ ^C
+mf98604@ares:~$ exit
+exit
+
+Script done on 2023-12-15 11:12:02-06:00 [COMMAND_EXIT_CODE="130"]

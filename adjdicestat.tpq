@@ -1,0 +1,27 @@
+
+Thought Provoking Questions - Lab 10 - Adjusted Dice Roll Statistics
+
+1.) 
+
+cin.peek() can be used to decide whether an adjustment is included in 
+the input by looking for a newline character after the initial roll value.
+
+2.) 
+
+The value of the plus or minus sign variable can simply be printed along with 
+the output. No decision-making is necessary. 
+
+3.) 
+
+The average formula is not affected by the adjustment factor because
+the difference between the minimum and maximum values does not change. 
+With or without adjustment, the difference between
+the minimum and maximum values remains the same.
+
+4.) 
+
+A positive number added to a positive number remains positive. 
+A negative number added to a positive number is the same as
+as subtracting that number less the negative sign from the positive number. 
+For that reason a plus sign can be used in both cases.
+

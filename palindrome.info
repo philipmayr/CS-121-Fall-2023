@@ -1,0 +1,17 @@
+
+Name:        Philip May'r	
+Class:       CSC121-001
+
+Activity:    Palindrome Determining Program
+
+Options:     Add (Level 1.5) to make your palindrome determining code 
+             into a function.
+             Add (Level 1.5) to check for phrase palindromes 
+             as well as word palindromes.
+             Add (Level 1.5) to place your palindrome checking function(s)
+             in a library.
+             
+Level:       7 (2.5 + 1.5 + 1.5 + 1.5) 
+
+Description: Determines whether a word, phrase, or sequence is a palindrome.
+

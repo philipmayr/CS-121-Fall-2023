@@ -1,0 +1,100 @@
+
+Thought Provoking Questions - Lab I -
+Roman Numerals
+
+1.)
+There is a pattern behind Roman numerals. The units, tens, and hundreds
+each have three different Roman numerals associated therewith. 
+The three numerals lie in order from least to greatest. The greatest 
+of the associated numerals for the units is the least
+of the associated numerals for the tens. Likewise, 
+the greatest of the associated numerals associated with the tens is the
+least of associated numerals for the hundreds. To represent numbers
+multiplied by a factor of three or fewer, the base unit is simply repeated.
+For a factor of four times the base unit, two numerals are used: the least
+associated numeral, followed by the middle associated numeral. For a factor
+of five, only the middle numeral is used. For factors greater than 5, but
+fewer than 9, the middle associated numeral is used followed by an
+appropriate number of least associated numerals, up to 3 times. For factors
+of 9, the least associated numeral is followed by the greatest associated
+numeral. For factors of ten, the least numeral of the next unit is used.
+
+For instance, if Roman numerals were letters of the Latin alphabet,
+starting from 'A' for the least (standing for 1), unto 'G' for the greatest
+(standing for 1000):
+
+The associated numerals for units would be 'A', 'B', and 'C'.
+The associated numerals for tens would be 'C', 'D', and 'E'.
+The associated numerals for hundreds would be 'E', 'F', and 'G'.
+
+Then, the numbers from 1 to 9 would be represented by 
+'A', 'AA', 'AAA', 'AB', 'B', 'BA', 'BAA', 'BAAA', and 'AC'.
+
+For a number of the base unit times a factor of 10, the next set of
+numerals comes into play, and the least from among those is chosen. 
+Therefore, the number 10 would be represented by 'C'. 
+
+The same pattern then repeats in like fashion 
+for the multiples of tens and hundreds.
+           
+
+2.) 
+The main algorithm in the program for converting a representation 
+of a number written with Indo-Arabic numerals into a representation 
+using Roman numerals does not use modulus operations. 
+However, the block dealing with fractions does. A modular operation is used
+to check whether or not the Indo-Arabic input fraction is valid, 
+as the Romans used base 12 fractions only. 
+	
+
+3.)
+The program will work only for values from 1 to 3999 because 
+there are not Roman numerals for zero or negative numbers, and 
+because for values greater than 3999, a bar (vinculum) is placed 
+over a numeral to multiply it by a factor of 1000. Implementing 
+such rare characters in a console program would likely be feasible, 
+albeit less than straightforward.
+
+4.)
+For the conversion of each digit, the algorithm uses three main branches: 
+one for a value of 9, one for a value of 4, and one 
+for values lesser than or greater than 4.
+
+
+5.)
+There are four 'for' loops in the conversion algorithm.
+The first loop goes over each digit in the Indo-Arabic number one by one. 
+Within the scope of the first loop, there are three more loops. 
+The first loop takes charge of printing the Roman numeral equivalents of
+the digits in the thousands' place of the original number. The
+second one takes cares of printing the numerals associated with digits
+greater than or lesser than four. The third and last loop prints dots for
+fractions from seven to eleven twelfths.
+
+
+6.)
+Twenty-seven tests or so would likely be
+required in order to completely test the program. 
+Nine tests for each base unit, whether ones, tens, or hundreds.
+All numbers are but combinations of the twenty-seven unique combinations.
+
+
+7.)
+Roman numerals are still used today, mostly for stylistic, aesthetic, 
+emphatic, gravitational, or traditional reasons. A few examples: 
+book chapters, clock faces, and musical and mathematical notation.
+
+8.)
+The program can allow the user to type both 'y' and 'yes' 
+for their 'again' response by reading in only the first character 
+of the response and ignoring the rest.
+
+9.)
+The program can allow the user to type both 'y' and 'Y' 
+for their 'again' response by converting the first character 
+of the response to its lower-case equivalent. 
+If the character is already in lower-case, no change is effected. 
+
+10.)
+Not applicable: associated option not implemented.
+

@@ -1,0 +1,13 @@
+
+Name:        Philip May'r
+Class:       CSC121-001
+
+Activity:    Roman Numeral Conversion Program
+
+Options:     Add (Level 2) to use a switch to good effect in your conversion code.
+             Add (Level 2.5) to translate fractions.
+             
+Level:       7.5 (3 + 2 + 2.5)
+
+Description: Converts Indo-Arabic numerals to Roman numerals.
+
